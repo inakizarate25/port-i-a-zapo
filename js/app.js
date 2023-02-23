@@ -1,6 +1,13 @@
-const hamburger = document.querySelector(".ham");  
-const navsub = document.querySelector(".nav-sub");  
-hamburger.addEventListener('click', () => {  
- hamburger.classList.toggle("change")  
- navsub.classList.toggle("nav-change")  
-});  
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+
+// Display mobile menu
+const mobieMenu = () =>{
+menu.classList.toggle('is-active')
+menuLinks.classList.toggle('active')
+
+}
+menu.addEventListener('click', mobieMenu)
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello World";
+}

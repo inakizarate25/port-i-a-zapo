@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Martian+Mono:wght@100;300;700&family=Work+Sans:wght@300;600;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,89 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: antiquewhite;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+    background-color:#0d0936 ;
 }
-.title{  
-    cursor:pointer;  
-   }  
-   /*Properties for Nav-bar*/  
-   .navbar{  
-    display:flex;  
-    top:0;  
-    height:15vh;  
+nav {
     width: 100%;
-    justify-content:space-between;  
-    align-items:center;   
-    padding:0px 20px;  
-   background-color: #b6f3dd;
-   }  
-   .nav-sub{  
-    display:flex;  
-    justify-content:space-between;  
-   }  
-   .list-item {  
-    padding:10px;  
-    list-style:none;  
-    color: #040115;
-    font-size: 18px;
-    font-weight: bold;
-   }  
-   .nav-link{  
-    color:inherit;  
-    text-decoration:none;  
-   }  
-   /*Properties for Hamburger*/  
-   .ham{  
-    display:none;  
-    padding:5px;  
-    cursor:pointer;  
-   }  
-   .bar1,.bar2,.bar3{  
-    display:block;  
-    width:35px;  
-    height:3px;  
-    margin:5px auto;  
-    background-color:#101010;  
-    transition: 0.4s;  
-   }  
-   @media only screen and (max-width:768px){  
-   *{  
-     overflow:hidden;  
-    }  
-   .nav-sub{  
-     position:absolute;   
-     top:10vh;  
-     right:0px;  
-     flex-direction:column;  
-     background-color:#040115;  
-     transition:transform 0.3s ease-in;  
-     transform:translate(100%);  
-     z-index: 10000;
-     width: 100%;
-     display: block;
-    }  
-    .list-item {  
-       color: antiquewhite;
-       font-size: 20px;
-       text-align: center;
-       } 
-   .nav-change{  
-     transform:translate(0%);  
-    }  
-   .ham{  
-     display:block;  
-    }  
-   .change .bar1 {  
-    transform: rotate(45deg) translate(8px,3px);  
-   }  
-   .change .bar2 {  
-    opacity: 0;  
-   }  
-   .change .bar3 {  
-    transform: rotate(-45deg) translate(8px,-3px);  
-   }  
-   }  
+ z-index: 10000;
+    background-color: #0d0936 !important;
+}
 
 
 .inicio {
@@ -101,13 +29,13 @@ align-items: center;
 gap: 150px;
 height: 85vh;
 width: 100%;
-background-color: #b6f3dd;
+background-color: #0d0936;
 }
 
 h1{
 font-size: 90px;
 transform: rotate(270deg);
-color: blue;
+color: aliceblue;
 width: 75vh;
 max-width: 680px;
 padding:2.9rem 1rem;
@@ -127,14 +55,14 @@ button {
     height: 50px;
     width: 140px;
     border-radius: 8px;
-    background-color: blue;
-    color: aliceblue;
+    background-color: rgb(196, 196, 210);
+    color: #040115;
     font-size: 18px;
     font-weight: bold;
     border: none;
 }
 button a {
-    color: antiquewhite;
+    color: #040115;
 }
 @media screen and (min-width:768px){
     .hab-section {
@@ -233,7 +161,7 @@ button a {
 .acerca {
     height:120vh;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,6 +170,7 @@ button a {
 }
 .acerca h3 {
     color: rgb(1, 1, 11);
+    font-size: 30px;
 }
 .acerca div {
     display:flex;
@@ -252,86 +181,84 @@ button a {
     gap: 20px;
     padding: 18px;
 }
-p {
-    font-size: 20px;
+.acerca-p {
+    font-size:16px;
     font-weight: 400;
+    padding: 12px;
 }
 @media screen and (min-width:768px){
-   p{
-    font-size: 26px;
+.acerca-p{
+    font-size: 20px;
     letter-spacing: 5px;
     padding: 18px;
    }
    .acerca {
     height: 110vh;
    }
-   .cursos {
-    margin-top: 100px;
-    width: 500px;
+ 
 }
-.estudios{
-    width: 80%;
+/* estudios */
+
+.estudios {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
 }
-h4 {
-    padding-bottom: 40px;
+
+.card {
+    height: 300px;
+    width: 95%;
+    max-width: 768px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
 }
+h5 {
+    font-size: 36px;
+    padding: 8px;
 }
-@media screen and (min-width:1000px){
-    .estudios,
-    .cursos {
-        width:500px ;
-        margin-top: 100px;
-    }
-   
-  }
-.br {
-    width: 180px;
-    height: 0;
-    border: 2px solid #040115;
-    float: left;
-    align-self: flex-start;
-    margin-left: 5vh;
-    margin: 10px;
+.estudios-p {
+    font-size: 22px;
+    padding: 18px;
 }
-.estudios,
+
 .cursos {
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 400px;
-    height: 300px;
+    list-style: none;
     padding: 18px;
-    gap: 20px;
 }
-.cursos {
-    margin-top: 40px;
+.cursos li {
+    padding: 10px;
 }
+@media screen and (min-width:768px){
+    .card {
+        width: 40%;
+        
+    }
+    }
+
+h4 {
+    padding-bottom: 40px;
+    color: aliceblue;
+}
+
 h4{
-    color:#2707de ;
+    color:#0d0936 ;
     font-size: 20px;
     width: 100px;
 }
-@media screen and (min-width:768px){
-    h4 {
-        font-size: 40px;
-        width: 200px;
-    }
-}
-.cursos-lista {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    list-style:circle;
-    gap: 12px;
-    padding-left: 12px;
-}
-.cursos-lista li {
-    font-size: 18px;
-    padding: 12px;
-}
+
 .contacto {
     display: flex;
     flex-direction: column;
@@ -353,9 +280,13 @@ h4{
 i{
     font-size: 40px;
     padding: 18px;
+    color: aliceblue;
 }
 a {
     text-decoration: none;
-    color: #040115;
+}
+.mail {
+    text-decoration: none;
+    color:aliceblue;
     font-size: 20px;
 }
