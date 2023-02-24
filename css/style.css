@@ -26,83 +26,70 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 150px;
-height: 85vh;
+height: 93vh;
 width: 100%;
+gap: 60px;
 background-color: #0d0936;
 }
 
 h1{
-font-size: 90px;
+font-size: 80px;
 transform: rotate(270deg);
 color: aliceblue;
-width: 75vh;
+width: 600px;
 max-width: 680px;
 padding:2.9rem 1rem;
-margin: 50px;
 text-align: left;
 }
 
-.cv {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    height: 25vh;
-    background-color: transparent;
-}
 
-button {
+
+.cv {
     height: 50px;
-    width: 140px;
+    width: 220px;
     border-radius: 8px;
     background-color: rgb(196, 196, 210);
     color: #040115;
     font-size: 18px;
     font-weight: bold;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
 }
-button a {
+.cv a {
+    color: #040115;
+    padding: 12px;
+}
+.cv i {
+    font-size: 34px;
     color: #040115;
 }
 @media screen and (min-width:768px){
-    .hab-section {
-        position: relative;
-    }
+
     h1 {
         transform: rotate(0);
-        position: absolute;
-        left: -10px;
-        top: 100px;
-        padding: 0;
-        margin-top: 12%;
         width: 800px;
-        text-align: center;
+        text-align: left;
+        font-size: 95px;
     }
 
     .cv {
-        position: absolute;
-        background-color: transparent;
-        top: 500px;
-        left: -20%;
-    }
-    button {
         height: 80px;
-        width: 180px;
+        width: 300px;
         font-size: 28px;
     }
 }
 @media screen and (min-width:1280px){
-    h1 {
-        top: 0px;
-        left: 150px;
-        font-size: 110px;
-        width: 1280px;
-    }
-
-    .cv {
-        top: 500px;
-        left: -20%;
-    }
+   h1 {
+    width: 1000px;
+    text-align: center;
+   }
+   .inicio {
+    flex-direction: row;
+    justify-content: center;
+   }
 }
 
 /* habilidades */
@@ -112,8 +99,8 @@ button a {
     align-items: center;
     flex-direction: column;
     width:100% ;
-    background-color: rgb(1, 1, 11);
-    height: 110vh;
+    background-color: rgb(2, 2, 14);
+    height: 100vh;
 }
  h3 {
     color: aliceblue;
@@ -126,7 +113,7 @@ button a {
     display: grid;
     grid-template-columns:1fr 1fr ;
     grid-template-rows: repeat(4,1fr);
-    height: 100vh;
+    height: 50vh;
     place-items: center;
 }
 .habilidades img {
@@ -200,7 +187,7 @@ button a {
 /* estudios */
 
 .estudios {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -223,7 +210,8 @@ button a {
 }
 h5 {
     font-size: 36px;
-    padding: 8px;
+    padding: 18px;
+    margin-top: 12px;
 }
 .estudios-p {
     font-size: 22px;
@@ -242,9 +230,11 @@ h5 {
     padding: 10px;
 }
 @media screen and (min-width:768px){
+    .estudios {
+        height: 70vh;
+    }
     .card {
-        width: 40%;
-        
+        width: 40% 
     }
     }
 
